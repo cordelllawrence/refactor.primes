@@ -92,7 +92,7 @@ namespace rerfactor.squreroot
         }
 
         // Using LINQ, synchronously calulates the number of primes under the supplied limit
-        static int SyncPrimesBelow2(int n)
+        static int SyncCountPrimesBelow2(int n)
         {
             Func<int, bool> isPrime = (p) => { for (var i = 3; i <= Math.Sqrt(p); i += 2) if (p % i == 0) return false; return true; };
 
@@ -101,7 +101,7 @@ namespace rerfactor.squreroot
         }
 
         // Calulates the number of primes under the supplied limit in Parallel using LINQ
-        static int ParallelPrimesBelow2(int n)
+        static int ParallelCountPrimesBelow2(int n)
         {
             Func<int, bool> isPrime = (p) => { for (var i = 3; i <= Math.Sqrt(p); i += 2) if (p % i == 0) return false; return true; };
 
