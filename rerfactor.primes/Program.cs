@@ -8,7 +8,7 @@ namespace rerfactor.primes
 {
     class Program
     {
-        static void Main(string[] args)
+        void Main(string[] args)
         {
             var limit = 16000000;
 
