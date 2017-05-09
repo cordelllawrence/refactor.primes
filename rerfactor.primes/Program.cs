@@ -27,14 +27,14 @@ namespace rerfactor.squreroot
             Console.WriteLine($"--- Parallel Time Elapsed: {watch.Elapsed}");
 
             watch.Restart();
-            Console.WriteLine($"LINQ: The number of primes under {limit} is {SyncPrimesBelow2(limit)}");
+            Console.WriteLine($"LINQ: The number of primes under {limit} is {SyncCountPrimesBelow2(limit)}");
 
             // Start Sybchronous LINQ test
             watch.Stop();
             Console.WriteLine($"--- LINQ Sync Time Elapsed: {watch.Elapsed}");
 
             watch.Restart();
-            Console.WriteLine($"LINQ: The number of primes under {limit} is {ParallelPrimesBelow2(limit)}");
+            Console.WriteLine($"LINQ: The number of primes under {limit} is {ParallelCountPrimesBelow2(limit)}");
 
             // Start Parallel LINQ test
             watch.Stop();
